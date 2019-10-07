@@ -148,8 +148,6 @@ button{
 .middleContent{
 	display: flex;
 	flex-direction: column;
-
-
 }
 
 .middle-img{
@@ -163,7 +161,6 @@ button{
 	flex-wrap: nowrap;
 	border-bottom: solid;
 	padding: 10px;
-	justify-content: space-between;
 }
 .text{
 	line-height: 30px;
@@ -172,28 +169,50 @@ button{
 p{
 	justify-content: space-between;
 }
-
-
-
-.service-header-img{
-	display: flex;
-	align-items: center;
-}
 footer{
-	padding:20px;
+    padding:20px;
 }
 @media(max-width: 800px){
     .flexCodePic{
         display:none;
+    }
+    .flex1 :hover{
+        color: black;
     }
     .flexContain1{
         display: flex;
         flex-direction: column-reverse;
     }
     .flexContain2{
-        display: flex;
         justify-content: center;
     }
 }
-@media(min-width: 500px){  
+@media(max-width: 500px){  
+    .flex1{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+       }
+       .flex1 :hover{
+           color: purple;
+       }
+    .featuresAndAbout{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .servicesProductVision{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .innovation{
+        left: 20px;
+    }
+    .footer{
+        justify-content: flex-end;
+    }
+    
 }
